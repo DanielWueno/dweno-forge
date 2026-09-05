@@ -11,8 +11,8 @@
       "displayName": "Credential Read Guard",
       "description": "Bloquea de forma deterministica la lectura o busqueda de material de credenciales, sin importar el stack del proyecto.",
       "source": {
-        "source": "github",
-        "repo": "DanielWueno/credential-read-guard"
+        "source": "url",
+        "url": "https://github.com/DanielWueno/credential-read-guard.git"
       },
       "license": "MIT",
       "repository": "https://github.com/DanielWueno/credential-read-guard",
@@ -23,20 +23,20 @@
       "displayName": "Arnes de ejecucion de planes de ingenieria",
       "description": "Ejecuta un plan de ingenieria un item por sesion, con el avance en un ledger versionado que sobrevive al /clear y al reinicio del limite de sesion.",
       "source": {
-        "source": "github",
-        "repo": "DanielWueno/arnes-plan"
+        "source": "url",
+        "url": "https://github.com/DanielWueno/arnes-plan.git"
       },
       "license": "MIT",
       "repository": "https://github.com/DanielWueno/arnes-plan",
-      "homepage": "https://github.com/DanielWueno/arnes-plan"
+      "homepage": "https://danielwueno.github.io/arnes-plan/"
     },
     {
       "name": "postgres-readonly-mcp",
       "displayName": "Postgres Read-Only MCP",
       "description": "Acceso MCP de solo lectura a bases PostgreSQL, con proteccion en dos capas: rol de base de datos con GRANT SELECT unicamente y servidor MCP en modo restringido.",
       "source": {
-        "source": "github",
-        "repo": "DanielWueno/postgres-readonly-mcp-plugin"
+        "source": "url",
+        "url": "https://github.com/DanielWueno/postgres-readonly-mcp-plugin.git"
       },
       "license": "MIT",
       "repository": "https://github.com/DanielWueno/postgres-readonly-mcp-plugin",
