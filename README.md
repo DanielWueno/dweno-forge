@@ -32,6 +32,27 @@ Instalar los plugins que interesen (cada uno por separado):
 individual — este catálogo no fija versión por plugin, así que sigue siempre
 la última etiqueta disponible en el repositorio de origen.
 
+## Actualizar el catálogo
+
+Claude Code cachea el `marketplace.json` de forma local por máquina en el
+momento del `marketplace add`. Si este catálogo cambia (por ejemplo, se
+corrige la fuente de un plugin), esa máquina no se entera sola — no existe
+una detección automática de que el catálogo local quedó desactualizado.
+
+Si un `/plugin install` falla (error de red, de verificación de host SSH, o
+"plugin not found" para un plugin que sí aparece en la tabla de arriba),
+antes de reportarlo como bug de un plugin en particular:
+
+```
+/plugin marketplace update dweno-forge
+/plugin install <nombre-del-plugin>@dweno-forge
+```
+
+El primer comando refresca el catálogo cacheado; el segundo reinstala el
+plugin ya con la fuente corregida. Correr `marketplace update` es
+inofensivo aunque el catálogo ya estuviera al día — ante la duda, se puede
+correr siempre antes de instalar.
+
 ## Requisitos
 
 Claude Code con soporte de marketplaces de plugins (`/plugin marketplace`).
